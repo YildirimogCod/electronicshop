@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Merriweather', serif;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav p {
+    margin-top:13px;
+    margin-left: 15px;
+}
+.top-nav .icons {
+    margin-top: 13px;
+    margin-right: 13px;
+}
+.top-nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+.top-nav a:hover {
+    color: lightskyblue;
+}
+.top-nav img {
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+@media screen and (max-width: 400px) {
+    .top-nav a {
+        font-size: 13px;
+    }
+    .top-nav a img {
+        width: 15px;
+    }
+    .top-nav p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 320) {
+    .top-nav a {
+        font-size: 10px;
+    }
+    .top-nav a img {
+        width: 13px;
+    }
+    .top-nav p {
+        font-size: 10px;
+    }
+}
+
+
+/* navbar */
+#navbar {
+    background-color: rgb(67, 0, 86);
+}
+#logo {
+    margin-left: 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+#logo span {
+    color: #ffc800;
+}
+#logo #span1 {
+    font-size: 30px;
+}
+#nav-input {
+    border-radius: 30px;
+}
+
+#nav-btn {
+    border-radius: 30px;
+    margin-left: 15px;
+    background-color:#ffc800;
+    color: white;
+    border: 1px solid black
+    
+}
+
+.nav-item .nav-link {
+    color: white;
+    margin-left: 2px;
+    text-shadow: 1px 0px 2px black;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover {
+    color: #ffc800;
+}
+.dropdown-menu li a {
+    color: white;
+    transition: 0.5s ease;
+}
+.dropdown-menu li a:hover {
+    background-color: rgb(67, 0, 86);
+    color: #ffc800;
+}
+/* navbar end */
+
+
+/* home content */
+.home {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 0;
+    margin: 10px;
+}
+.home .img {
+    flex: 1 1 300px;
+}
+.home .img img {
+    margin-top: 30px;
+    width: 100%;
+}
+.home .content {
+    flex: 1 1 400px;
+    margin-top: 20px;
+}
+.content h1 {
+    color: rgb(67, 0, 86);
+    font-weight: bold;
+    text-shadow: 0px 0px 1px rgb(67, 0, 86);
+}
+#span2 {
+    color: #ffc800;
+}
+.btn button {
+    background-color: rgb(67, 0, 86);
+    color: white;
+    width: 150px;
+    padding: 7px;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: 0.5s ease;
+}
+.btn button:hover {
+    color: #ffc800;
+}
+@media screen and (max-width:1200px) {
+    .home {
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px) {
+    .home {
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px) {
+    .home {
+        height: 110vh;
+    }
+}
+/* home content end */
+
+
+/* product cards */
+#product-cards {
+    margin-top: 100px;
+}
+#product-cards h1 {
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #ffc800;    
+}
+#product-cards .card h3 {
+    font-size: 25px;
+    color: black;
+}
+/* .star {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+} */
+.star i {
+   margin-left: 5px;
+   font-size: 13px;
+}
+.checked {
+    color: #ffc800;
+}
+#product-cards .card h2 {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+#product-cards .card h2 span {
+    float: right;
+    color: black;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    #product-cards .card h3 {
+        font-size: 18px;
+    }
+}
+
+/* products card end */
+
+
+/* <!-- other cards --> */
+#other-cards .card {
+    background-color: #a9a9a92b;
+}
+#other-cards .card h3 {
+    margin-top: 30px;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+#other-cards .card h5 {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    border: 2px solid black;
+    width: 200px;
+}
+#other-cards .card p {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 15px;
+    color: black;
+    margin-left: 15px;
+    letter-spacing: 3px;
+}
+#other-cards .card #shopnow {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    #other-cards .card h3 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    #other-cards .card h5 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    #shopnow {
+        margin-top: 0px;
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+}
+/* other cards */
