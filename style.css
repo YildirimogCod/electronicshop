@@ -5,6 +5,10 @@
     outline: none;
     font-family: 'Merriweather', serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -267,3 +271,452 @@
 
 }
 /* other cards */
+
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 0;
+    background-color: #a9a9a92b;
+    margin-top: 3%;
+}
+.banner .img {
+    flex: 1 1 300px;
+}
+.banner .img img {
+    margin-top: 30px;
+    width: 100%;
+}
+.banner .content {
+    flex: 1 1 400px;
+    margin-top: 20px;
+}
+.banner .content h1 {
+    color: rgb(67, 0, 86);
+    font-weight: bold;
+    text-shadow: 0px 0px 1px rgb(67, 0, 86);
+    margin-left: 23px;
+    font-size: 55px;
+}
+.banner .content span {
+    color: rgb(67, 0, 86);
+    text-shadow: 1px 1px 1px black;
+}
+.banner .content p {
+    margin-left: 23px;
+}
+#span2 {
+    color: #ffc800;
+}
+.btn {
+    margin-left: 13px;
+}
+.btn button {
+    background-color: rgb(67, 0, 86);
+    color: white;
+    width: 150px;
+    height: 32px;
+    padding: 7px;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: 0.5s ease;
+}
+.btn button:hover {
+    background-color: #ffc800;
+    color: black;
+    border: none;
+}
+@media screen and (max-width:1200px) {
+    .banner {
+        height: 90vh;
+    }
+}
+@media screen and (max-width:799px) {
+    .banner {
+        height: 140vh;
+    }
+}
+@media screen and (max-width:550px) {
+    .banner {
+        height: 110vh;
+    }
+}
+@media screen and (max-width:550px) {
+    .content h1 {
+        font-size: 45px;
+    }
+}
+
+/* banner */
+
+/* product banner cards */
+#product-banner-cards {
+    margin-top: 50px;
+}
+#product-banner-cards h1 {
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #ffc800;    
+}
+#product-banner-cards .card h3 {
+    font-size: 25px;
+    color: black;
+}
+/* .star {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+} */
+.star i {
+   margin-left: 5px;
+   font-size: 13px;
+}
+.checked {
+    color: #ffc800;
+}
+#product-banner-cards .card h2 {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+#product-banner-cards .card h2 span {
+    float: right;
+    color: black;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    #product-banner-cards .card h3 {
+        font-size: 18px;
+    }
+}
+/* product banner cards end */
+
+
+
+/* other cards */
+#other{
+    margin-top: 50px;
+}
+#other .card {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#other .card h3 {
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#other .card p {
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+/* offer */
+#offer .card {
+    border: none;
+}
+#offer i {
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+/* offer end */
+
+
+/* newslater */
+#newslater {
+    margin-top: 100px;
+}
+#newslater h3 {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+#newslater .input {
+    margin-top: 30PX;
+}
+#newslater .input input {
+    width: 350px;
+    height: 36px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+#subscribe {
+    width: 200px;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border:none;
+    background-color: #ffc800;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+}
+@media screen and (max-width:465px){
+    .input input{
+        width: 280px;
+    }
+    #subscribe{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:250px){
+    .input input{
+        width: 150px;
+    }
+    #subscribe{
+        width: 150px;
+    }
+}
+/* newslater end */
+
+
+/* footer */
+#footer{
+    padding: 0 0 30px 0px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(67 0 86);
+    margin-top: 100px;
+}
+#footer .footer-top{
+    padding: 60px 0 30px 0;
+    background-color: rgb(67 0 86);
+    color: white;
+}
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+    color: #ffc800;
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: white;
+}
+#footer .footer-top h3{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#footer .footer-top .footer-links h3{
+    color: #ffc800;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li a:hover{
+    color: #ffc800;
+}
+#footer .footer-top .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #373737;
+    color: white;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    transition: 0.5s ease;
+}
+#footer .footer-top .social-links a:hover{
+    background-color: #ffc800;
+    color: white;
+}
+#footer .copyright{
+    text-align: center;
+    float: left;
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+    font-size: 13px;
+}
+#footer .credits a{
+    color: #ffc800;
+}
+/* footer end */
+
+
+
+.arrow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+
+/* login Page */
+#login {
+    width: 65%;
+    height: 70vh;
+    background-color: rgb(67, 0, 86);
+    margin-top: 35px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+#login #side1 h2 {
+    color: #ffc800;
+    font-weight: bold;
+    margin-top: 200px;
+}
+#login #side2 {
+    background-color: white;
+    height: 70vh;
+    border-radius: 10px;
+}
+#login #side2 h3 {
+    margin-top: 10px;
+    color: #ffc800;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px;
+}
+#login #side2 p {
+    font-weight: bold;
+}
+#login .input2 input{
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid #ffc800;
+    width: 300px;
+}
+.input2 input ::placeholder {
+    font-weight: bold;
+}
+#btnlogin {
+    padding-top: 10px;
+}
+#btnlogin a {
+    padding: 10px;
+    background-color: #ffc800;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+    color: white;
+    border-radius: 15px;
+} 
+@media screen and (max-width:991px){
+    .input2 input{
+        width: 250px;
+    }
+}
+@media screen and (max-width:765px){
+    .input2 input{
+        width: 260px;
+    }
+    #side2{
+        height: 60vh;
+    }
+}
+
+
+/* about */
+#about {
+    margin-top: 30px;
+}
+#about h3 {
+    font-weight: bold;
+    color: #ffc800;
+    text-shadow: 0px 0px 1px black;
+}
+#about button {
+    width: 150px;
+    background-color: rgb(67, 0, 86);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+
+/* contact */
+
+#contact {
+    margin-top: 50px;
+}
+#contact .card {
+    height: 100px;
+    margin-top: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2)0px 7px 29px 0 
+}
+    #contact .card i{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+        color: rgb(67 0 86);
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+    #contact .card h6{
+        margin-left: 10px;
+        margin-top: 10px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: rgb(67 0 86);
+    }
+    .messagebtn button{
+        margin-top: 30px;
+        width: 200px;
+        height: 33px;
+        background: transparent;
+        border: 2px solid rgb(67 0 86);
+        font-weight: bold;
+        letter-spacing: 3px;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .messagebtn button:hover{
+        background-color: rgb(67 0 86);
+        color: white;
+    }
+/* contact end */
